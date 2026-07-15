@@ -1,998 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- ============================================================
-         QuantumHost - Homepage
-         Premium Game Hosting Website
-         ============================================================ -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-    <!-- Primary Meta Tags -->
-    <title>QuantumHost - Premium Game Server Hosting | Minecraft, VPS, Palworld</title>
-    <meta name="title" content="QuantumHost - Premium Game Server Hosting" />
-    <meta name="description" content="QuantumHost offers premium Minecraft, VPS, Palworld, and bot hosting with NVMe SSDs, DDoS protection, and 24/7 support. Starting at ₹40/month." />
-    <meta name="keywords" content="minecraft hosting, vps hosting, palworld hosting, game server hosting, cheap minecraft server, india hosting" />
-    <meta name="author" content="QuantumHost" />
-    <meta name="robots" content="index, follow" />
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://quantumhost.gg/" />
-    <meta property="og:title" content="QuantumHost - Premium Game Server Hosting" />
-    <meta property="og:description" content="Premium Minecraft, VPS, Palworld, and bot hosting with NVMe SSDs, DDoS protection, and 24/7 support. Starting at ₹40/month." />
-    <meta property="og:image" content="assets/images/og-image.png" />
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://quantumhost.gg/" />
-    <meta property="twitter:title" content="QuantumHost - Premium Game Server Hosting" />
-    <meta property="twitter:description" content="Premium Minecraft, VPS, Palworld, and bot hosting. Starting at ₹40/month." />
-    <meta property="twitter:image" content="assets/images/og-image.png" />
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/images/logo.png" />
-    <link rel="apple-touch-icon" href="assets/images/logo.png" />
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-
-    <!-- Theme Color -->
-    <meta name="theme-color" content="#FFD400" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuantumHost - Elite Enterprise Next-Gen Gaming & Infrastructure Hosting</title>
+    <meta name="description" content="Deploy massive, lightning-fast game nodes, Ryzen powered enterprise VPS solutions, and extreme performance infrastructure hosting powered by QuantumHost technology.">
+    <meta property="og:title" content="QuantumHost - Elite Enterprise Next-Gen Gaming & Infrastructure Hosting">
+    <meta property="og:description" content="Experience cutting-edge speeds, cPanel deployments, automated bot nodes, and instant game configurations.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-    <!-- ============================================================
-         LOADING SCREEN
-         ============================================================ -->
-    <div id="loading-screen" aria-hidden="true">
-        <div class="loading-content">
-            <div class="loading-logo">⚡ QuantumHost</div>
-            <div class="loading-bar-wrapper">
-                <div class="loading-bar"></div>
-            </div>
-        </div>
-    </div>
-
-    <!-- ============================================================
-         SCROLL TO TOP BUTTON
-         ============================================================ -->
-    <button id="scroll-top" aria-label="Scroll to top">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="18 15 12 9 6 15"></polyline>
-        </svg>
-    </button>
-
-    <!-- ============================================================
-         NAVIGATION
-         ============================================================ -->
-    <nav class="navbar" role="navigation" aria-label="Main navigation">
-        <div class="nav-container">
-
-            <!-- Logo -->
-            <a href="index.html" class="nav-logo" aria-label="QuantumHost Home">
-                <div class="nav-logo-icon">Q</div>
-                <span class="nav-logo-text">QuantumHost</span>
-            </a>
-
-            <!-- Desktop Menu -->
-            <ul class="nav-menu" role="list">
-
-                <!-- Services Dropdown -->
-                <li class="nav-item">
-                    <a href="#" class="nav-link" aria-haspopup="true">
-                        Services
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                    </a>
-                    <div class="nav-dropdown" role="menu">
-                        <a href="minecraft/index.html" class="dropdown-item" role="menuitem">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
-                            Minecraft Hosting
-                        </a>
-                        <a href="vps/index.html" class="dropdown-item" role="menuitem">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
-                            VPS Hosting
-                        </a>
-                        <a href="palworld/index.html" class="dropdown-item" role="menuitem">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
-                            Palworld Hosting
-                        </a>
-                        <a href="web-hosting/index.html" class="dropdown-item" role="menuitem">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-                            Web Hosting
-                        </a>
-                        <a href="bot-hosting/index.html" class="dropdown-item" role="menuitem">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
-                            Bot Hosting
-                        </a>
-                        <a href="demo-server/index.html" class="dropdown-item" role="menuitem">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
-                            Demo Servers
-                        </a>
-                    </div>
-                </li>
-
-                <li class="nav-item">
-                    <a href="minecraft/index.html" class="nav-link">Minecraft</a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="vps/index.html" class="nav-link">VPS</a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="demo-server/index.html" class="nav-link">Free Demo</a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="discord/index.html" class="nav-link">Discord</a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="support/index.html" class="nav-link">Support</a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="contact/index.html" class="nav-link">Contact</a>
-                </li>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Quantum<span>Host</span></a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="minecraft/index.html" class="nav-link">Minecraft</a></li>
+                <li><a href="vps/index.html" class="nav-link">VPS</a></li>
+                <li><a href="palworld/index.html" class="nav-link">Palworld</a></li>
+                <li><a href="web-hosting/index.html" class="nav-link">Web Hosting</a></li>
+                <li><a href="bot-hosting/index.html" class="nav-link">Bot Hosting</a></li>
+                <li><a href="support/index.html" class="nav-link">Support</a></li>
+                <li><a href="contact/index.html" class="nav-link">Contact</a></li>
             </ul>
-
-            <!-- Nav Actions -->
-            <div class="nav-actions">
-                <a href="#" class="btn btn-ghost btn-sm">Login</a>
-                <a href="minecraft/index.html" class="btn btn-primary btn-sm">Get Started</a>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-
-            <!-- Hamburger -->
-            <button class="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
         </div>
     </nav>
 
-    <!-- Mobile Menu -->
-    <div class="mobile-menu" role="navigation" aria-label="Mobile navigation">
-        <a href="index.html" class="mobile-nav-link">🏠 Home</a>
-        <a href="minecraft/index.html" class="mobile-nav-link">⛏️ Minecraft Hosting</a>
-        <a href="vps/index.html" class="mobile-nav-link">🖥️ VPS Hosting</a>
-        <a href="palworld/index.html" class="mobile-nav-link">🎮 Palworld Hosting</a>
-        <a href="web-hosting/index.html" class="mobile-nav-link">🌐 Web Hosting</a>
-        <a href="bot-hosting/index.html" class="mobile-nav-link">🤖 Bot Hosting</a>
-        <a href="demo-server/index.html" class="mobile-nav-link">⚡ Free Demo</a>
-        <a href="discord/index.html" class="mobile-nav-link">💬 Discord</a>
-        <a href="support/index.html" class="mobile-nav-link">🎧 Support</a>
-        <a href="contact/index.html" class="mobile-nav-link">📧 Contact</a>
-        <div class="mobile-nav-actions">
-            <a href="#" class="btn btn-ghost">Login</a>
-            <a href="minecraft/index.html" class="btn btn-primary">Get Started</a>
+    <header class="hero" id="home">
+        <div class="container grid-2">
+            <div class="hero-content fade-up">
+                <h1>Quantum Computing Speed for <span>Elite Gaming</span> Nodes.</h1>
+                <p>Deploy enterprise-grade game servers, unmetered NVMe KVM virtual systems, and custom automated service arrays in under 60 seconds.</p>
+                <div class="hero-actions">
+                    <a href="minecraft/index.html" class="btn btn-primary">Deploy Game Nodes</a>
+                    <a href="vps/index.html" class="btn btn-secondary">Provision VPS</a>
+                </div>
+            </div>
+            <div class="hero-graphic float-animation fade-up" style="display: flex; justify-content: center; align-items: center;">
+                <div style="width: 80%; height: 300px; background: linear-gradient(135deg, var(--primary), transparent); opacity: 0.15; border-radius: var(--radius); filter: blur(20px);"></div>
+            </div>
         </div>
-    </div>
+    </header>
 
-    <!-- ============================================================
-         MAIN CONTENT
-         ============================================================ -->
-    <main>
-
-        <!-- ============================================================
-             HERO SECTION
-             ============================================================ -->
-        <section class="hero" aria-label="Hero section">
-            <div class="hero-bg">
-                <div class="hero-bg-gradient"></div>
-                <div class="hero-grid"></div>
-                <div class="hero-particles" aria-hidden="true"></div>
+    <section class="section container fade-up">
+        <div class="grid-4 stats-bar">
+            <div class="stat-item">
+                <h3 class="counter-target" data-count="99">0</h3>
+                <p>Uptime Percentage</p>
             </div>
+            <div class="stat-item">
+                <h3 class="counter-target" data-count="14520">0</h3>
+                <p>Active Deployments</p>
+            </div>
+            <div class="stat-item">
+                <h3 class="counter-target" data-count="12">0</h3>
+                <p>Global Datacenters</p>
+            </div>
+            <div class="stat-item">
+                <h3 class="counter-target" data-count="3">0</h3>
+                <p>Average Ticket Resolution (Mins)</p>
+            </div>
+        </div>
+    </section>
 
-            <div class="hero-container">
-                <div class="hero-content">
+    <section class="section container fade-up" id="benefits">
+        <div class="section-header">
+            <h2>Why Choose <span>QuantumHost</span></h2>
+            <p>Engineered for high-reliability, speed optimization, and intense multi-threaded performance workloads.</p>
+        </div>
+        <div class="grid-3">
+            <div class="card">
+                <h3>AMD Ryzen Architecture</h3>
+                <p style="color: var(--text-muted); margin-top: 12px;">We build strictly using high-frequency AMD Ryzen Processors engineered to handle dynamic loads smoothly.</p>
+            </div>
+            <div class="card">
+                <h3>Global Anycast DDoS Mitigation</h3>
+                <p style="color: var(--text-muted); margin-top: 12px;">Multi-layered enterprise mitigation algorithms keep your infrastructure safe from malicious targeting attacks.</p>
+            </div>
+            <div class="card">
+                <h3>Instant Provisioning Engines</h3>
+                <p style="color: var(--text-muted); margin-top: 12px;">Your gaming systems, databases, and operational containers launch immediately after payment validation clears.</p>
+            </div>
+        </div>
+    </section>
 
-                    <!-- Hero Text -->
-                    <div class="hero-text">
-                        <div class="hero-badge">
-                            <span class="pulse-dot"></span>
-                            🚀 India's #1 Game Hosting Provider
-                        </div>
+    <section class="section container fade-up" id="plans">
+        <div class="section-header">
+            <h2>Select Your <span>Infrastructure Base</span></h2>
+            <p>From private sandbox deployments to large multi-cluster cloud computing networks.</p>
+        </div>
+        <div class="grid-3">
+            <div class="card pricing-card">
+                <div>
+                    <h3>Minecraft Node</h3>
+                    <p style="color: var(--text-muted);">Budget to Premium Tiers Available</p>
+                    <div class="pricing-price">₹40 <span>/ mo onwards</span></div>
+                </div>
+                <a href="minecraft/index.html" class="btn btn-primary" style="width: 100%;">View Configs</a>
+            </div>
+            <div class="card pricing-card premium-tier">
+                <div class="pricing-badge">Popular</div>
+                <div>
+                    <h3>Ryzen KVM VPS</h3>
+                    <p style="color: var(--text-muted);">Root Control & NVMe Arrays</p>
+                    <div class="pricing-price">₹499 <span>/ mo onwards</span></div>
+                </div>
+                <a href="vps/index.html" class="btn btn-primary" style="width: 100%;">View Configs</a>
+            </div>
+            <div class="card pricing-card">
+                <div>
+                    <h3>Enterprise Web Panel</h3>
+                    <p style="color: var(--text-muted);">LiteSpeed & Managed Security</p>
+                    <div class="pricing-price">₹99 <span>/ mo onwards</span></div>
+                </div>
+                <a href="web-hosting/index.html" class="btn btn-primary" style="width: 100%;">View Configs</a>
+            </div>
+        </div>
+    </section>
 
-                        <h1 class="hero-title">
-                            Host Your Game<br />
-                            Server with<br />
-                            <span class="gradient-text">Lightning Speed</span>
-                        </h1>
+    <section class="section container fade-up">
+        <div class="section-header">
+            <h2>Strategic <span>Global Footprint</span></h2>
+            <p>Minimize routing delays and latencies by matching workloads to nearest localized edge arrays.</p>
+        </div>
+        <div class="grid-4" style="text-align: center;">
+            <div class="card" style="padding: 24px;"><h4>Mumbai, IN</h4></div>
+            <div class="card" style="padding: 24px;"><h4>Frankfurt, DE</h4></div>
+            <div class="card" style="padding: 24px;"><h4>Singapore, SG</h4></div>
+            <div class="card" style="padding: 24px;"><h4>New York, USA</h4></div>
+        </div>
+    </section>
 
-                        <p class="hero-description">
-                            Experience premium game hosting with NVMe SSDs, enterprise DDoS protection, and instant deployment. Minecraft, VPS, Palworld & more — all starting at just ₹40/month.
-                        </p>
-
-                        <div class="hero-actions">
-                            <a href="minecraft/index.html" class="btn btn-primary btn-lg">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
-                                Start Hosting Now
-                            </a>
-                            <a href="demo-server/index.html" class="btn btn-outline btn-lg">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
-                                Try Free Demo
-                            </a>
-                        </div>
-
-                        <div class="hero-stats-row">
-                            <div class="hero-stat">
-                                <div class="hero-stat-number" data-counter="5000" data-suffix="+" data-duration="2000">0+</div>
-                                <div class="hero-stat-label">Active Servers</div>
-                            </div>
-                            <div class="hero-stat-divider"></div>
-                            <div class="hero-stat">
-                                <div class="hero-stat-number" data-counter="99.9" data-suffix="%" data-decimals="1" data-duration="2000">0%</div>
-                                <div class="hero-stat-label">Uptime SLA</div>
-                            </div>
-                            <div class="hero-stat-divider"></div>
-                            <div class="hero-stat">
-                                <div class="hero-stat-number" data-counter="24" data-suffix="/7" data-duration="1000">0/7</div>
-                                <div class="hero-stat-label">Support</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Hero Visual -->
-                    <div class="hero-visual" aria-hidden="true">
-                        <div class="hero-server-card">
-                            <div class="server-card-header">
-                                <span class="server-card-title">⚡ QuantumHost Control Panel</span>
-                                <span class="server-status">
-                                    <span class="status-dot"></span>
-                                    Online
-                                </span>
-                            </div>
-
-                            <div class="server-metrics">
-                                <div class="metric-item">
-                                    <div class="metric-label">CPU Usage</div>
-                                    <div class="metric-value">34 <span>%</span></div>
-                                    <div class="metric-bar">
-                                        <div class="metric-bar-fill" style="width: 34%"></div>
-                                    </div>
-                                </div>
-                                <div class="metric-item">
-                                    <div class="metric-label">RAM Usage</div>
-                                    <div class="metric-value">6.2 <span>/ 8GB</span></div>
-                                    <div class="metric-bar">
-                                        <div class="metric-bar-fill" style="width: 77%"></div>
-                                    </div>
-                                </div>
-                                <div class="metric-item">
-                                    <div class="metric-label">Network</div>
-                                    <div class="metric-value">1.2 <span>Gbps</span></div>
-                                    <div class="metric-bar">
-                                        <div class="metric-bar-fill" style="width: 60%"></div>
-                                    </div>
-                                </div>
-                                <div class="metric-item">
-                                    <div class="metric-label">Players</div>
-                                    <div class="metric-value">47 <span>/ 100</span></div>
-                                    <div class="metric-bar">
-                                        <div class="metric-bar-fill" style="width: 47%"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="server-console">
-                                <div class="console-line">
-                                    <span class="console-time">[12:34:01]</span>
-                                    <span class="console-text">[Server] Done (1.847s)! For help, type "help"</span>
-                                </div>
-                                <div class="console-line">
-                                    <span class="console-time">[12:34:15]</span>
-                                    <span class="console-text info">[Server] Player Steve joined the game</span>
-                                </div>
-                                <div class="console-line">
-                                    <span class="console-time">[12:35:02]</span>
-                                    <span class="console-text">[Server] Player Alex joined the game</span>
-                                </div>
-                                <div class="console-line">
-                                    <span class="console-time">[12:36:44]</span>
-                                    <span class="console-text warn">[Backup] Auto-backup completed successfully</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Floating Cards -->
-                        <div class="floating-card floating-card-1">
-                            <div class="floating-card-icon">⚡</div>
-                            <div class="floating-card-text">
-                                <strong>NVMe SSD</strong>
-                                <span>10x Faster</span>
-                            </div>
-                        </div>
-
-                        <div class="floating-card floating-card-2">
-                            <div class="floating-card-icon">🛡️</div>
-                            <div class="floating-card-text">
-                                <strong>DDoS Protected</strong>
-                                <span>Always Secure</span>
-                            </div>
-                        </div>
-
-                        <div class="floating-card floating-card-3">
-                            <div class="floating-card-icon">🌍</div>
-                            <div class="floating-card-text">
-                                <strong>4 Locations</strong>
-                                <span>Low Latency</span>
-                            </div>
-                        </div>
-                    </div>
+    <section class="section container fade-up">
+        <div class="card" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; padding: 30px;">
+            <div style="display: flex; align-items: center; gap: 16px;">
+                <div style="width: 14px; height: 14px; background: #2ecc71; border-radius: 50%; box-shadow: 0 0 10px #2ecc71;"></div>
+                <div>
+                    <h4 style="font-weight: 700;">All Global Quantum Systems Operational</h4>
+                    <p style="color: var(--text-muted); font-size: 0.85rem;">Network Health Check completed 2 minutes ago</p>
                 </div>
             </div>
-        </section>
+            <a href="support/index.html" class="btn btn-secondary">System Details</a>
+        </div>
+    </section>
 
-        <!-- ============================================================
-             STATISTICS SECTION
-             ============================================================ -->
-        <section class="stats-section" aria-label="Statistics">
-            <div class="container">
-                <div class="stats-grid">
+    <section class="section container fade-up">
+        <div class="card" style="background: linear-gradient(135deg, #171717, #5865F2 200%); text-align: center;">
+            <h2 style="font-size: 2.3rem; font-weight: 800; margin-bottom: 16px;">Join Our Massive <span>Gaming Community</span></h2>
+            <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 30px auto;">Get real-time operational updates, collaborate with community network engineers, and participate in special giveaways.</p>
+            <a href="discord/index.html" class="btn btn-primary" style="background: #5865F2; color: #fff; box-shadow: none;">Launch Discord Invite</a>
+        </div>
+    </section>
 
-                    <div class="stat-item reveal">
-                        <div class="stat-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
-                        </div>
-                        <div class="stat-number" data-counter="5000" data-suffix="+" data-duration="2000">0+</div>
-                        <div class="stat-label">Active Servers</div>
-                    </div>
+    <section class="section container fade-up">
+        <div class="card" style="max-width: 700px; margin: 0 auto; text-align: center;">
+            <h3>Subscribe to the Quantum Wire</h3>
+            <p style="color: var(--text-muted); margin-bottom: 24px;">Get server infrastructure notifications and performance updates directly inside your inbox.</p>
+            <form data-validate style="display: flex; gap: 12px; flex-wrap: wrap;">
+                <input type="email" class="form-control" placeholder="Enter security-validated email" required style="flex: 1; min-width: 200px;">
+                <button type="submit" class="btn btn-primary">Join Wire</button>
+            </form>
+        </div>
+    </section>
 
-                    <div class="stat-item reveal delay-1">
-                        <div class="stat-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-                        </div>
-                        <div class="stat-number" data-counter="12000" data-suffix="+" data-duration="2000">0+</div>
-                        <div class="stat-label">Happy Customers</div>
-                    </div>
-
-                    <div class="stat-item reveal delay-2">
-                        <div class="stat-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
-                        </div>
-                        <div class="stat-number" data-counter="99.9" data-suffix="%" data-decimals="1" data-duration="2000">0%</div>
-                        <div class="stat-label">Uptime Guarantee</div>
-                    </div>
-
-                    <div class="stat-item reveal delay-3">
-                        <div class="stat-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                        </div>
-                        <div class="stat-number" data-counter="3" data-suffix=" Min" data-duration="1000">0 Min</div>
-                        <div class="stat-label">Avg. Response Time</div>
-                    </div>
-
-                </div>
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">Quantum<span>Host</span></a>
+                <p>Enterprise structural integrity, premium gaming speeds, and automated infrastructure frameworks built for tomorrow's scale.</p>
             </div>
-        </section>
-
-        <!-- ============================================================
-             WHY CHOOSE US SECTION
-             ============================================================ -->
-        <section class="why-section section-padding" aria-label="Why choose QuantumHost">
-            <div class="container">
-
-                <div class="section-header">
-                    <div class="section-badge">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-                        Why QuantumHost
-                    </div>
-                    <h2 class="section-title">Built for <span>Gamers</span>, Powered by Enterprise</h2>
-                    <p class="section-subtitle">We combine cutting-edge hardware with gaming-optimized software to deliver the best possible experience for you and your players.</p>
-                </div>
-
-                <div class="why-grid">
-
-                    <div class="why-card reveal">
-                        <div class="why-card-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
-                        </div>
-                        <h3 class="why-card-title">NVMe SSD Storage</h3>
-                        <p class="why-card-desc">All servers run on enterprise-grade NVMe SSDs delivering 10x faster read/write speeds compared to traditional hard drives. Your world loads instantly.</p>
-                    </div>
-
-                    <div class="why-card reveal delay-1">
-                        <div class="why-card-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-                        </div>
-                        <h3 class="why-card-title">Enterprise DDoS Protection</h3>
-                        <p class="why-card-desc">Multi-layered DDoS mitigation with up to 1Tbps protection capacity. Your server stays online even during the most intense attacks.</p>
-                    </div>
-
-                    <div class="why-card reveal delay-2">
-                        <div class="why-card-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
-                        </div>
-                        <h3 class="why-card-title">Ultra-Low Latency</h3>
-                        <p class="why-card-desc">Strategically placed data centers across India and globally ensure sub-10ms latency for most players. Say goodbye to lag forever.</p>
-                    </div>
-
-                    <div class="why-card reveal delay-3">
-                        <div class="why-card-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                        </div>
-                        <h3 class="why-card-title">24/7 Expert Support</h3>
-                        <p class="why-card-desc">Our team of gaming experts is available around the clock via Discord, live chat, and ticket system. Average response time under 3 minutes.</p>
-                    </div>
-
-                    <div class="why-card reveal delay-4">
-                        <div class="why-card-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 .49-3.51"></path></svg>
-                        </div>
-                        <h3 class="why-card-title">Instant Deployment</h3>
-                        <p class="why-card-desc">Your server is live within 60 seconds of payment. No waiting, no manual setup. Choose your game, pick a plan, and start playing immediately.</p>
-                    </div>
-
-                    <div class="why-card reveal delay-5">
-                        <div class="why-card-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
-                        </div>
-                        <h3 class="why-card-title">Affordable Pricing</h3>
-                        <p class="why-card-desc">Premium hosting doesn't have to break the bank. Our plans start at just ₹40/month with no hidden fees, no contracts, and easy upgrades.</p>
-                    </div>
-
-                </div>
+            <div>
+                <h4 class="footer-heading">Hosting Arrays</h4>
+                <ul class="footer-links">
+                    <li><a href="minecraft/index.html">Minecraft Server Nodes</a></li>
+                    <li><a href="vps/index.html">KVM Ryzen VPS</a></li>
+                    <li><a href="palworld/index.html">Palworld Server Nodes</a></li>
+                    <li><a href="web-hosting/index.html">LiteSpeed Web Systems</a></li>
+                    <li><a href="bot-hosting/index.html">Automated App Clusters</a></li>
+                </ul>
             </div>
-        </section>
-
-        <!-- ============================================================
-             HOSTING PLANS SECTION
-             ============================================================ -->
-        <section class="plans-section section-padding" aria-label="Hosting plans">
-            <div class="container">
-
-                <div class="section-header">
-                    <div class="section-badge">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
-                        Our Services
-                    </div>
-                    <h2 class="section-title">Choose Your <span>Perfect Plan</span></h2>
-                    <p class="section-subtitle">From budget-friendly to enterprise-grade, we have the right hosting solution for every type of gamer and project.</p>
-                </div>
-
-                <!-- Plan Tabs -->
-                <div class="plans-tabs">
-                    <button class="plan-tab active" data-tab="all">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
-                        All Plans
-                    </button>
-                    <button class="plan-tab" data-tab="minecraft">⛏️ Minecraft</button>
-                    <button class="plan-tab" data-tab="vps">🖥️ VPS</button>
-                    <button class="plan-tab" data-tab="web">🌐 Web</button>
-                    <button class="plan-tab" data-tab="bot">🤖 Bot</button>
-                </div>
-
-                <!-- Plans Grid -->
-                <div class="plans-grid">
-
-                    <!-- Minecraft Budget -->
-                    <div class="plan-card reveal" data-type="minecraft">
-                        <div class="plan-tier">Minecraft</div>
-                        <div class="plan-name">Budget Starter</div>
-                        <div class="plan-price">
-                            <div class="plan-price-amount">₹40</div>
-                            <div class="plan-price-period">/month</div>
-                        </div>
-                        <div class="plan-specs">
-                            <div class="plan-spec">
-                                <span class="plan-spec-label">RAM</span>
-                                <span class="plan-spec-value">2 GB</span>
-                            </div>
-                            <div class="plan-spec">
-                                <span class="plan-spec-label">Storage</span>
-                                <span class="plan-spec-value">10 GB NVMe</span>
-                            </div>
-                            <div class="plan-spec">
-                                <span class="plan-spec-label">CPU</span>
-                                <span class="plan-spec-value">2 vCores</span>
-                            </div>
-                            <div class="plan-spec">
-                                <span class="plan-spec-label">Players</span>
-                                <span class="plan-spec-value">~20</span>
-                            </div>
-                        </div>
-                        <ul class="plan-features">
-                            <li class="plan-feature">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                Instant Setup
-                            </li>
-                            <li class="plan-feature">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                DDoS Protection
-                            </li>
-                            <li class="plan-feature">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                Pterodactyl Panel
-                            </li>
-                            <li class="plan-feature">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                24/7 Support
-                            </li>
-                        </ul>
-                        <a href="minecraft/index.html" class="btn btn-outline">Order Now</a>
-                    </div>
-
-                    <!-- Minecraft Premium -->
-                    <div class="plan-card featured reveal delay-1" data-type="minecraft">
-                        <div class="plan-featured-badge">Most Popular</div>
-                        <div class="plan-tier">Minecraft</div>
-                        <div class="plan-name">Premium Pro</div>
-                        <div class="plan-price">
-                            <div class="plan-price-amount">₹399</div>
-                            <div class="plan-price-period">/month</div>
-                        </div>
-                        <div class="plan-specs">
-                            <div class="plan-spec">
-                                <span class="plan-spec-label">RAM</span>
-                                <span class="plan-spec-value">8 GB</span>
-                            </div>
-                            <div class="plan-spec">
-                                <span class="plan-spec-label">Storage</span>
-                                <span class="plan-spec-value">30 GB NVMe</span>
-                            </div>
-                            <div class="plan-spec">
-                                <span class="plan-spec-label">CPU</span>
-                                <span class="plan-spec-value">4 vCores</span>
-                            </div>
-                            <div class="plan-spec">
-                                <span class="plan-spec-label">Players</span>
-                                <span class="plan-spec-value">~80</span>
-                            </div>
-                        </div>
-                        <ul class="plan-features">
-                            <li class="plan-feature">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                Everything in Budget
-                            </li>
-                            <li class="plan-feature">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                Free Subdomain
-                            </li>
-                            <li class="plan-feature">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                Daily Backups
-                            </li>
-                            <li class="plan-feature">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                Plugin Support
-                            </li>
-                        </ul>
-                        <a href="minecraft/index.html" class="btn btn-primary">Order Now</a>
-                    </div>
-
-                    <!-- VPS Plan -->
-                    <div class="plan-card reveal delay-2" data-type="vps">
-                        <div class="plan-tier">VPS</div>
-                        <div class="plan-name">VPS Starter</div>
-                        <div class="plan-price">
-                            <div class="plan-price-amount">₹299</div>
-                            <div class="plan-price-period">/month</div>
-                        </div>
-                        <div class="plan-specs">
-                            <div class="plan-spec">
-                                <span class="plan-spec-label">RAM</span>
-                                <span class="plan-spec-value">2 GB</span>
-                            </div>
-                            <div class="plan-spec">
-                                <span class="plan-spec-label">Storage</span>
-                                <span class="plan-spec-value">40 GB NVMe</span>
-                            </div>
-                            <div class="plan-spec">
-                                <span class="plan-spec-label">CPU</span>
-                                <span class="plan-spec-value">2 vCores</span>
-                            </div>
-                            <div class="plan-spec">
-                                <span class="plan-spec-label">Bandwidth</span>
-                                <span class="plan-spec-value">2 TB</span>
-                            </div>
-                        </div>
-                        <ul class="plan-features">
-                            <li class="plan-feature">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                KVM Virtualization
-                            </li>
-                            <li class="plan-feature">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                Full Root Access
-                            </li>
-                            <li class="plan-feature">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                Dedicated IPv4
-                            </li>
-                            <li class="plan-feature">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                DDoS Protection
-                            </li>
-                        </ul>
-                        <a href="vps/index.html" class="btn btn-outline">Order Now</a>
-                    </div>
-
-                    <!-- Web Hosting Plan -->
-                    <div class="plan-card reveal delay-3" data-type="web">
-                        <div class="plan-tier">Web Hosting</div>
-                        <div class="plan-name">Starter Site</div>
-                        <div class="plan-price">
-                            <div class="plan-price-amount">₹99</div>
-                            <div class="plan-price-period">/month</div>
-                        </div>
-                        <div class="plan-specs">
-                            <div class="plan-spec">
-                                <span class="plan-spec-label">Storage</span>
-                                <span class="plan-spec-value">10 GB SSD</span>
-                            </div>
-                            <div class="plan-spec">
-                                <span class="plan-spec-label">Bandwidth</span>
-                                <span class="plan-spec-value">Unlimited</span>
-                            </div>
-                            <div class="plan-spec">
-                                <span class="plan-spec-label">Domains</span>
-                                <span class="plan-spec-value">1</span>
-                            </div>
-                            <div class="plan-spec">
-                                <span class="plan-spec-label">SSL</span>
-                                <span class="plan-spec-value">Free</span>
-                            </div>
-                        </div>
-                        <ul class="plan-features">
-                            <li class="plan-feature">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                cPanel Access
-                            </li>
-                            <li class="plan-feature">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                LiteSpeed Server
-                            </li>
-                            <li class="plan-feature">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                Daily Backups
-                            </li>
-                            <li class="plan-feature">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                One-Click WordPress
-                            </li>
-                        </ul>
-                        <a href="web-hosting/index.html" class="btn btn-outline">Order Now</a>
-                    </div>
-
-                </div>
-
-                <div style="text-align: center; margin-top: 2.5rem;">
-                    <a href="minecraft/index.html" class="btn btn-ghost btn-lg">View All Plans →</a>
-                </div>
-
+            <div>
+                <h4 class="footer-heading">Support Channels</h4>
+                <ul class="footer-links">
+                    <li><a href="support/index.html">Knowledgebase Center</a></li>
+                    <li><a href="support/index.html">Submit Support Ticket</a></li>
+                    <li><a href="demo-server/index.html">Request Sandbox Demo</a></li>
+                    <li><a href="contact/index.html">Corporate Contact Channels</a></li>
+                </ul>
             </div>
-        </section>
-
-        <!-- ============================================================
-             SERVER LOCATIONS SECTION
-             ============================================================ -->
-        <section class="locations-section section-padding" aria-label="Server locations">
-            <div class="container">
-
-                <div class="section-header">
-                    <div class="section-badge">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-                        Global Network
-                    </div>
-                    <h2 class="section-title">Servers Across <span>4 Locations</span></h2>
-                    <p class="section-subtitle">Our strategically placed data centers ensure low latency for players worldwide. Choose the location closest to your community.</p>
-                </div>
-
-                <!-- Map Visual -->
-                <div class="locations-map reveal">
-                    <div class="map-grid"></div>
-                    <div class="location-points">
-                        <div class="location-point">
-                            <div class="location-dot"></div>
-                            <div class="location-name">Mumbai, India</div>
-                            <div class="location-ping">~8ms</div>
-                        </div>
-                        <div class="location-point">
-                            <div class="location-dot"></div>
-                            <div class="location-name">Delhi, India</div>
-                            <div class="location-ping">~12ms</div>
-                        </div>
-                        <div class="location-point">
-                            <div class="location-dot"></div>
-                            <div class="location-name">Singapore</div>
-                            <div class="location-ping">~35ms</div>
-                        </div>
-                        <div class="location-point">
-                            <div class="location-dot"></div>
-                            <div class="location-name">Frankfurt, EU</div>
-                            <div class="location-ping">~120ms</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Location Cards -->
-                <div class="locations-grid">
-
-                    <div class="location-card reveal">
-                        <div class="location-flag">🇮🇳</div>
-                        <div class="location-info">
-                            <div class="location-city">Mumbai</div>
-                            <div class="location-country">India — Primary</div>
-                        </div>
-                        <div class="location-latency">
-                            <div class="latency-value">~8ms</div>
-                            <div class="latency-label">avg ping</div>
-                        </div>
-                    </div>
-
-                    <div class="location-card reveal delay-1">
-                        <div class="location-flag">🇮🇳</div>
-                        <div class="location-info">
-                            <div class="location-city">Delhi NCR</div>
-                            <div class="location-country">India — North</div>
-                        </div>
-                        <div class="location-latency">
-                            <div class="latency-value">~12ms</div>
-                            <div class="latency-label">avg ping</div>
-                        </div>
-                    </div>
-
-                    <div class="location-card reveal delay-2">
-                        <div class="location-flag">🇸🇬</div>
-                        <div class="location-info">
-                            <div class="location-city">Singapore</div>
-                            <div class="location-country">Asia Pacific</div>
-                        </div>
-                        <div class="location-latency">
-                            <div class="latency-value">~35ms</div>
-                            <div class="latency-label">avg ping</div>
-                        </div>
-                    </div>
-
-                    <div class="location-card reveal delay-3">
-                        <div class="location-flag">🇩🇪</div>
-                        <div class="location-info">
-                            <div class="location-city">Frankfurt</div>
-                            <div class="location-country">Europe</div>
-                        </div>
-                        <div class="location-latency">
-                            <div class="latency-value">~120ms</div>
-                            <div class="latency-label">avg ping</div>
-                        </div>
-                    </div>
-
-                </div>
+            <div>
+                <h4 class="footer-heading">Legal Framework</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Terms of Infrastructure Service</a></li>
+                    <li><a href="#">Data Privacy Directives</a></li>
+                    <li><a href="#">SLA Guarantee Policy</a></li>
+                </ul>
             </div>
-        </section>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 QuantumHost. Engineered with Absolute Architecture. All Rights Reserved.</p>
+            <p>Localization Framework: English (Global Matrix)</p>
+        </div>
+    </footer>
 
-        <!-- ============================================================
-             MINECRAFT FEATURES SECTION
-             ============================================================ -->
-        <section class="mc-features-section section-padding" aria-label="Minecraft features">
-            <div class="container">
-                <div class="mc-features-content">
+    <div class="scroll-top">↑</div>
 
-                    <!-- Visual -->
-                    <div class="mc-features-visual reveal-left">
-                        <div class="mc-panel">
-                            <div class="mc-panel-header">
-                                <div class="panel-dots">
-                                    <span class="panel-dot red"></span>
-                                    <span class="panel-dot yellow"></span>
-                                    <span class="panel-dot green"></span>
-                                </div>
-                                <span class="panel-title">Supported Server Software</span>
-                            </div>
-                            <div class="mc-panel-body">
-                                <div class="mc-version-list">
-                                    <div class="mc-version-item">
-                                        <span class="mc-version-name">Paper MC</span>
-                                        <span class="mc-version-type badge badge-success">Recommended</span>
-                                    </div>
-                                    <div class="mc-version-item">
-                                        <span class="mc-version-name">Spigot</span>
-                                        <span class="mc-version-type badge badge-info">Stable</span>
-                                    </div>
-                                    <div class="mc-version-item">
-                                        <span class="mc-version-name">Vanilla</span>
-                                        <span class="mc-version-type badge badge-info">Official</span>
-                                    </div>
-                                    <div class="mc-version-item">
-                                        <span class="mc-version-name">Forge</span>
-                                        <span class="mc-version-type badge badge-warning">Modded</span>
-                                    </div>
-                                    <div class="mc-version-item">
-                                        <span class="mc-version-name">Fabric</span>
-                                        <span class="mc-version-type badge badge-warning">Modded</span>
-                                    </div>
-                                    <div class="mc-version-item">
-                                        <span class="mc-version-name">BungeeCord</span>
-                                        <span class="mc-version-type badge badge-info">Network</span>
-                                    </div>
-                                    <div class="mc-version-item">
-                                        <span class="mc-version-name">Velocity</span>
-                                        <span class="mc-version-type badge badge-success">Network</span>
-                                    </div>
-                                    <div class="mc-version-item">
-                                        <span class="mc-version-name">Waterfall</span>
-                                        <span class="mc-version-type badge badge-info">Network</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Text -->
-                    <div class="mc-features-text reveal-right">
-                        <div class="section-badge">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
-                            Minecraft Hosting
-                        </div>
-                        <h2 class="section-title" style="text-align: left;">Everything You Need for the <span>Perfect Server</span></h2>
-
-                        <div class="mc-feature-list">
-                            <div class="mc-feature-item">
-                                <div class="mc-feature-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
-                                </div>
-                                <div>
-                                    <div class="mc-feature-title">One-Click Mod Installer</div>
-                                    <p class="mc-feature-desc">Install any mod pack, plugin, or software with a single click from our intuitive control panel. No technical knowledge required.</p>
-                                </div>
-                            </div>
-
-                            <div class="mc-feature-item">
-                                <div class="mc-feature-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 .49-3.51"></path></svg>
-                                </div>
-                                <div>
-                                    <div class="mc-feature-title">Automatic Daily Backups</div>
-                                    <p class="mc-feature-desc">Never lose your world again. We automatically backup your server daily with 7-day retention, and you can restore in one click.</p>
-                                </div>
-                            </div>
-
-                            <div class="mc-feature-item">
-                                <div class="mc-feature-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
-                                </div>
-                                <div>
-                                    <div class="mc-feature-title">Pterodactyl Panel</div>
-                                    <p class="mc-feature-desc">Manage your server with the industry-leading Pterodactyl panel. Start, stop, restart, access console, and manage files from anywhere.</p>
-                                </div>
-                            </div>
-
-                            <div class="mc-feature-item">
-                                <div class="mc-feature-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-                                </div>
-                                <div>
-                                    <div class="mc-feature-title">Custom Domain / Subdomain</div>
-                                    <p class="mc-feature-desc">Get a free quantumhost.gg subdomain or connect your own custom domain to your Minecraft server for a professional look.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div style="margin-top: 2rem;">
-                            <a href="minecraft/index.html" class="btn btn-primary btn-lg">Explore Minecraft Plans →</a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- ============================================================
-             SUPPORTED SOFTWARE SECTION
-             ============================================================ -->
-        <section class="software-section section-padding" aria-label="Supported software">
-            <div class="container">
-
-                <div class="section-header">
-                    <div class="section-badge">⚙️ Software</div>
-                    <h2 class="section-title">Supports <span>All Major Platforms</span></h2>
-                    <p class="section-subtitle">We support every major game server software and mod platform out of the box.</p>
-                </div>
-
-                <div class="software-grid">
-
-                    <div class="software-card reveal">
-                        <span class="software-icon">📄</span>
-                        <div class="software-name">Paper MC</div>
-                        <div class="software-type">High Performance</div>
-                    </div>
-
-                    <div class="software-card reveal delay-1">
-                        <span class="software-icon">🌿</span>
-                        <div class="software-name">Spigot</div>
-                        <div class="software-type">Bukkit Fork</div>
-                    </div>
-
-                    <div class="software-card reveal delay-2">
-                        <span class="software-icon">⚗️</span>
-                        <div class="software-name">Forge</div>
-                        <div class="software-type">Mod Platform</div>
-                    </div>
-
-                    <div class="software-card reveal delay-3">
-                        <span class="software-icon">🧵</span>
-                        <div class="software-name">Fabric</div>
-                        <div class="software-type">Mod Loader</div>
-                    </div>
-
-                    <div class="software-card reveal delay-4">
-                        <span class="software-icon">🌊</span>
-                        <div class="software-name">Waterfall</div>
-                        <div class="software-type">Proxy Network</div>
-                    </div>
-
-                    <div class="software-card reveal delay-5">
-                        <span class="software-icon">🚀</span>
-                        <div class="software-name">Velocity</div>
-                        <div class="software-type">Modern Proxy</div>
-                    </div>
-
-                    <div class="software-card reveal">
-                        <span class="software-icon">🔗</span>
-                        <div class="software-name">BungeeCord</div>
-                        <div class="software-type">Network Proxy</div>
-                    </div>
-
-                    <div class="software-card reveal delay-1">
-                        <span class="software-icon">🎮</span>
-                        <div class="software-name">Vanilla MC</div>
-                        <div class="software-type">Official Server</div>
-                    </div>
-
-                    <div class="software-card reveal delay-2">
-                        <span class="software-icon">🦅</span>
-                        <div class="software-name">Purpur</div>
-                        <div class="software-type">Performance</div>
-                    </div>
-
-                    <div class="software-card reveal delay-3">
-                        <span class="software-icon">🌙</span>
-                        <div class="software-name">Pufferfish</div>
-                        <div class="software-type">Optimized</div>
-                    </div>
-
-                    <div class="software-card reveal delay-4">
-                        <span class="software-icon">🐲</span>
-                        <div class="software-name">Quilt</div>
-                        <div class="software-type">Mod Loader</div>
-                    </div>
-
-                    <div class="software-card reveal delay-5">
-                        <span class="software-icon">🔧</span>
-                        <div class="software-name">Mohist</div>
-                        <div class="software-type">Forge + Bukkit</div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- ============================================================
-             TESTIMONIALS SECTION
-             ============================================================ -->
-        <section class="testimonials-section section-padding" aria-label="Customer testimonials">
-            <div class="container">
-
-                <div class="section-header">
-                    <div class="section-badge">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-                        Testimonials
-                    </div>
-                    <h2 class="section-title">Loved by <span>Thousands of Gamers</span></h2>
-                    <p class="section-subtitle">Don't just take our word for it. Here's what our community has to say about QuantumHost.</p>
-                </div>
-
-                <div class="testimonials-grid">
-
-                    <div class="testimonial-card reveal">
-                        <div class="testimonial-quote">"</div>
-                        <div class="testimonial-stars
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
