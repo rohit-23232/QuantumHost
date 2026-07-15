@@ -5,9 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Premium Minecraft Server Hosting - QuantumHost</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        /* Dedicated styles for the interactive Series layout */
+        .series-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+        }
+        .tab-btn {
+            background: var(--card);
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            padding: 12px 30px;
+            border-radius: var(--radius);
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        .tab-btn:hover, .tab-btn.active {
+            border-color: var(--primary);
+            color: #000;
+            background: var(--primary);
+            box-shadow: 0 4px 20px var(--glow);
+        }
+        .series-container {
+            display: none;
+        }
+        .series-container.active {
+            display: grid;
+        }
+    </style>
 </head>
 <body>
 
+    <!-- Navigation Framework -->
     <nav class="navbar sticky">
         <div class="container nav-container">
             <a href="../index.html" class="logo">Quantum<span>Host</span></a>
@@ -24,125 +57,271 @@
         </div>
     </nav>
 
+    <!-- Page Hero Banner -->
     <header class="hero">
-        <div class="container text-center" style="text-align: center;">
-            <h1 class="fade-up">High Performance <span>Minecraft Node</span> Deployments</h1>
-            <p class="fade-up" style="margin: 20px auto; max-width: 600px;">Zero lag, completely isolated game memory paths, and unmetered NVMe enterprise clusters optimized for heavy modpacks.</p>
+        <div class="container" style="text-align: center;">
+            <h1 class="fade-up">High Performance <span>Minecraft Server</span> Series</h1>
+            <p class="fade-up" style="margin: 20px auto; max-width: 600px;">Toggle through our dedicated plan series arrays to isolate the perfect resource configuration for your custom modpack environment.</p>
         </div>
     </header>
 
+    <!-- Plan Series Section -->
     <section class="section container fade-up">
-        <div class="section-header">
-            <h2>Select Your <span>Minecraft Tier</span></h2>
-            <p>Scalable configurations supporting Paper, Purpur, Forge, Fabric, and enterprise networks.</p>
+        
+        <!-- Interactive Plan Selector Controls -->
+        <div class="series-tabs">
+            <button class="tab-btn active" onclick="switchSeries('budget')">Budget Series</button>
+            <button class="tab-btn" onclick="switchSeries('premium')">Premium Series</button>
+            <button class="tab-btn" onclick="switchSeries('network')">Network Series</button>
+            <button class="tab-btn" onclick="switchSeries('extreme')">Extreme Series</button>
         </div>
-        <div class="grid-4">
+
+        <!-- BUDGET SERIES MATRICES -->
+        <div id="budget" class="grid-4 series-container active">
             <div class="card pricing-card">
                 <div>
-                    <h3>Budget Tier</h3>
-                    <div class="pricing-price">₹40<span>/ mo</span></div>
+                    <h3>Budget Alpha</h3>
+                    <div class="pricing-price">₹40 <span>/ mo</span></div>
                     <ul class="pricing-features">
-                        <li>2GB DDR4 Memory</li>
-                        <li>10GB Enterprise NVMe</li>
+                        <li>2GB Dedicated RAM</li>
+                        <li>10GB NVMe Storage</li>
                         <li>Standard Node Share</li>
                     </ul>
                 </div>
-                <button class="btn btn-primary" onclick="alert('Redirecting to Budget Billing Portal...')">Deploy Matrix</button>
+                <button class="btn btn-primary" onclick="alert('Deploying Budget Alpha...')">Order Node</button>
+            </div>
+            <div class="card pricing-card">
+                <div>
+                    <h3>Budget Beta</h3>
+                    <div class="pricing-price">₹199 <span>/ mo</span></div>
+                    <ul class="pricing-features">
+                        <li>4GB Dedicated RAM</li>
+                        <li>20GB NVMe Storage</li>
+                        <li>Standard Node Share</li>
+                    </ul>
+                </div>
+                <button class="btn btn-primary" onclick="alert('Deploying Budget Beta...')">Order Node</button>
+            </div>
+            <div class="card pricing-card">
+                <div>
+                    <h3>Budget Gamma</h3>
+                    <div class="pricing-price">₹399 <span>/ mo</span></div>
+                    <ul class="pricing-features">
+                        <li>8GB Dedicated RAM</li>
+                        <li>40GB NVMe Storage</li>
+                        <li>Standard Node Share</li>
+                    </ul>
+                </div>
+                <button class="btn btn-primary" onclick="alert('Deploying Budget Gamma...')">Order Node</button>
+            </div>
+            <div class="card pricing-card">
+                <div>
+                    <h3>Budget Delta</h3>
+                    <div class="pricing-price">₹699 <span>/ mo</span></div>
+                    <ul class="pricing-features">
+                        <li>16GB Dedicated RAM</li>
+                        <li>64GB NVMe Storage</li>
+                        <li>Standard Node Share</li>
+                    </ul>
+                </div>
+                <button class="btn btn-primary" onclick="alert('Deploying Budget Delta...')">Order Node</button>
+            </div>
+        </div>
+
+        <!-- PREMIUM SERIES MATRICES -->
+        <div id="premium" class="grid-4 series-container">
+            <div class="card pricing-card">
+                <div>
+                    <h3>Premium Core-1</h3>
+                    <div class="pricing-price">₹399 <span>/ mo</span></div>
+                    <ul class="pricing-features">
+                        <li>8GB Ryzen RAM</li>
+                        <li>30GB NVMe Gen4</li>
+                        <li>Priority Compute Allocation</li>
+                    </ul>
+                </div>
+                <button class="btn btn-primary" onclick="alert('Deploying Premium Core-1...')">Order Node</button>
+            </div>
+            <div class="card pricing-card">
+                <div>
+                    <h3>Premium Core-2</h3>
+                    <div class="pricing-price">₹549 <span>/ mo</span></div>
+                    <ul class="pricing-features">
+                        <li>12GB Ryzen RAM</li>
+                        <li>60GB NVMe Gen4</li>
+                        <li>Priority Compute Allocation</li>
+                    </ul>
+                </div>
+                <button class="btn btn-primary" onclick="alert('Deploying Premium Core-2...')">Order Node</button>
             </div>
             <div class="card pricing-card premium-tier">
                 <div class="pricing-badge">Optimal</div>
                 <div>
-                    <h3>Premium Tier</h3>
-                    <div class="pricing-price">₹399<span>/ mo</span></div>
+                    <h3>Premium Core-3</h3>
+                    <div class="pricing-price">₹699 <span>/ mo</span></div>
                     <ul class="pricing-features">
-                        <li>8GB Ryzen Memory</li>
-                        <li>30GB NVMe Gen4</li>
-                        <li>Dedicated Resource Allocation</li>
+                        <li>16GB Ryzen RAM</li>
+                        <li>90GB NVMe Gen4</li>
+                        <li>Priority Compute Allocation</li>
                     </ul>
                 </div>
-                <button class="btn btn-primary" onclick="alert('Redirecting to Premium Billing Portal...')">Deploy Matrix</button>
+                <button class="btn btn-primary" onclick="alert('Deploying Premium Core-3...')">Order Node</button>
             </div>
             <div class="card pricing-card">
                 <div>
-                    <h3>Network Tier</h3>
-                    <div class="pricing-price">₹699<span>/ mo</span></div>
+                    <h3>Premium Max</h3>
+                    <div class="pricing-price">₹899 <span>/ mo</span></div>
                     <ul class="pricing-features">
-                        <li>16GB Ryzen Memory</li>
+                        <li>32GB Ryzen RAM</li>
                         <li>128GB NVMe Gen4</li>
-                        <li>Dedicated Core Mapping</li>
+                        <li>Priority Compute Allocation</li>
                     </ul>
                 </div>
-                <button class="btn btn-primary" onclick="alert('Redirecting to Network Billing Portal...')">Deploy Matrix</button>
+                <button class="btn btn-primary" onclick="alert('Deploying Premium Max...')">Order Node</button>
+            </div>
+        </div>
+
+        <!-- NETWORK SERIES MATRICES -->
+        <div id="network" class="grid-4 series-container">
+            <div class="card pricing-card">
+                <div>
+                    <h3>Net Starter</h3>
+                    <div class="pricing-price">₹699 <span>/ mo</span></div>
+                    <ul class="pricing-features">
+                        <li>16GB High Frequency RAM</li>
+                        <li>128GB RAID 10 NVMe</li>
+                        <li>Dedicated Bungee Routing</li>
+                    </ul>
+                </div>
+                <button class="btn btn-primary" onclick="alert('Deploying Net Starter...')">Order Node</button>
             </div>
             <div class="card pricing-card">
                 <div>
-                    <h3>Extreme Tier</h3>
-                    <div class="pricing-price">₹599<span>/ mo</span></div>
+                    <h3>Net Advance</h3>
+                    <div class="pricing-price">₹999 <span>/ mo</span></div>
                     <ul class="pricing-features">
-                        <li>32GB Dedicated RAM</li>
-                        <li>1TB Enterprise NVMe</li>
-                        <li>Uncapped Core Execution</li>
+                        <li>32GB High Frequency RAM</li>
+                        <li>256GB RAID 10 NVMe</li>
+                        <li>Dedicated Bungee Routing</li>
                     </ul>
                 </div>
-                <button class="btn btn-primary" onclick="alert('Redirecting to Extreme Billing Portal...')">Deploy Matrix</button>
+                <button class="btn btn-primary" onclick="alert('Deploying Net Advance...')">Order Node</button>
+            </div>
+            <div class="card pricing-card">
+                <div>
+                    <h3>Net Pro</h3>
+                    <div class="pricing-price">₹1399 <span>/ mo</span></div>
+                    <ul class="pricing-features">
+                        <li>48GB High Frequency RAM</li>
+                        <li>384GB RAID 10 NVMe</li>
+                        <li>Dedicated Bungee Routing</li>
+                    </ul>
+                </div>
+                <button class="btn btn-primary" onclick="alert('Deploying Net Pro...')">Order Node</button>
+            </div>
+            <div class="card pricing-card premium-tier">
+                <div class="pricing-badge">Enterprise</div>
+                <div>
+                    <h3>Net Nexus</h3>
+                    <div class="pricing-price">₹1799 <span>/ mo</span></div>
+                    <ul class="pricing-features">
+                        <li>64GB High Frequency RAM</li>
+                        <li>528GB RAID 10 NVMe</li>
+                        <li>Dedicated Bungee Routing</li>
+                    </ul>
+                </div>
+                <button class="btn btn-primary" onclick="alert('Deploying Net Nexus...')">Order Node</button>
             </div>
         </div>
+
+        <!-- EXTREME SERIES MATRICES -->
+        <div id="extreme" class="grid-4 series-container">
+            <div class="card pricing-card">
+                <div>
+                    <h3>Quantum Extreme I</h3>
+                    <div class="pricing-price">₹599 <span>/ mo</span></div>
+                    <ul class="pricing-features">
+                        <li>32GB Isolated DDR5 RAM</li>
+                        <li>128GB PCIe 5.0 NVMe</li>
+                        <li>Uncapped Core Clocking</li>
+                    </ul>
+                </div>
+                <button class="btn btn-primary" onclick="alert('Deploying Quantum Extreme I...')">Order Node</button>
+            </div>
+            <div class="card pricing-card">
+                <div>
+                    <h3>Quantum Extreme II</h3>
+                    <div class="pricing-price">₹899 <span>/ mo</span></div>
+                    <ul class="pricing-features">
+                        <li>64GB Isolated DDR5 RAM</li>
+                        <li>256GB PCIe 5.0 NVMe</li>
+                        <li>Uncapped Core Clocking</li>
+                    </ul>
+                </div>
+                <button class="btn btn-primary" onclick="alert('Deploying Quantum Extreme II...')">Order Node</button>
+            </div>
+            <div class="card pricing-card">
+                <div>
+                    <h3>Quantum Extreme III</h3>
+                    <div class="pricing-price">₹1199 <span>/ mo</span></div>
+                    <ul class="pricing-features">
+                        <li>96GB Isolated DDR5 RAM</li>
+                        <li>512GB PCIe 5.0 NVMe</li>
+                        <li>Uncapped Core Clocking</li>
+                    </ul>
+                </div>
+                <button class="btn btn-primary" onclick="alert('Deploying Quantum Extreme III...')">Order Node</button>
+            </div>
+            <div class="card pricing-card premium-tier">
+                <div class="pricing-badge">Max Compute</div>
+                <div>
+                    <h3>Quantum Apex</h3>
+                    <div class="pricing-price">₹1399 <span>/ mo</span></div>
+                    <ul class="pricing-features">
+                        <li>128GB Isolated DDR5 RAM</li>
+                        <li>1TB PCIe 5.0 NVMe</li>
+                        <li>Uncapped Core Clocking</li>
+                    </ul>
+                </div>
+                <button class="btn btn-primary" onclick="alert('Deploying Quantum Apex...')">Order Node</button>
+            </div>
+        </div>
+
     </section>
 
+    <!-- Version Matrix -->
     <section class="section container fade-up">
         <div class="section-header">
-            <h2>Architectural <span>Feature Comparison</span></h2>
+            <h2>Fully Supported <span>Environments</span></h2>
         </div>
-        <table style="width: 100%; border-collapse: collapse; background: var(--card); border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border);">
-            <thead>
-                <tr style="background: rgba(255,212,0,0.05); text-align: left;">
-                    <th style="padding: 20px;">Feature Specification</th>
-                    <th style="padding: 20px;">Budget Systems</th>
-                    <th style="padding: 20px;">Extreme Systems</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr style="border-bottom: 1px solid var(--border);">
-                    <td style="padding: 20px;">CPU Core Model</td>
-                    <td style="padding: 20px; color: var(--text-muted);">Intel Xeon E-Series Base</td>
-                    <td style="padding: 20px; color: var(--primary);">AMD Ryzen 9 7950X Extreme</td>
-                </tr>
-                <tr style="border-bottom: 1px solid var(--border);">
-                    <td style="padding: 20px;">Storage Array Layer</td>
-                    <td style="padding: 20px; color: var(--text-muted);">Standard SSD Matrix</td>
-                    <td style="padding: 20px; color: var(--primary);">Enterprise NVMe Gen4 RAID 10</td>
-                </tr>
-                <tr>
-                    <td style="padding: 20px;">DDoS Mitigation Path</td>
-                    <td style="padding: 20px; color: var(--text-muted);">Standard Edge Filtering</td>
-                    <td style="padding: 20px; color: var(--primary);">Custom Premium Game Level Anycast</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
-    <section class="section container fade-up">
-        <div class="section-header">
-            <h2>Frequently Asked <span>Inquiries</span></h2>
-        </div>
-        <div style="max-width: 800px; margin: 0 auto;">
-            <div class="faq-item">
-                <div class="faq-trigger">Can I scale allocations dynamically later?</div>
-                <div class="faq-content">Yes, upgrades are calculated seamlessly without data corruption or memory clean wipes.</div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-trigger">Do you offer automated backup maps?</div>
-                <div class="faq-content">All setups include hourly incremental backup systems inside secure offsite storage nodes.</div>
-            </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; text-align: center;">
+            <div class="card" style="padding: 20px;"><h4>Vanilla Vanilla</h4></div>
+            <div class="card" style="padding: 20px;"><h4>PaperMC</h4></div>
+            <div class="card" style="padding: 20px;"><h4>Purpur Core</h4></div>
+            <div class="card" style="padding: 20px;"><h4>Forge Modded</h4></div>
+            <div class="card" style="padding: 20px;"><h4>Fabric Node</h4></div>
         </div>
     </section>
 
+    <!-- Structural Footer Area -->
     <footer class="footer">
         <div class="container footer-bottom">
             <p>&copy; 2026 QuantumHost. Engineered with Absolute Architecture. All Rights Reserved.</p>
         </div>
     </footer>
 
+    <!-- Interactive Plan Matrix Dynamic Switcher Script -->
+    <script>
+        function switchSeries(seriesId) {
+            // Deactivate all tab controls and layout grids
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            document.querySelectorAll('.series-container').forEach(container => container.classList.remove('active'));
+            
+            // Activate target parameters
+            event.target.classList.add('active');
+            document.getElementById(seriesId).classList.add('active');
+        }
+    </script>
     <script src="../assets/js/script.js"></script>
 </body>
 </html>
